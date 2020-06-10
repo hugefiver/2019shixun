@@ -1,8 +1,16 @@
 import Vue from 'vue'
+import axios from 'axios'
 import App from './App.vue'
+import './plugins/element.js'
+import router from './router'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.prototype.$http = axios;
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+// eslint-disable-next-line
+const app = new Vue({
+    el: '#app',
+    router: router,
+    render: h => h(App),
+});
+
