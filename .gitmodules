@@ -1,4 +1,4 @@
-[submodule "2019shixun"]
+[submodule "frontend"]
 	path = frontend
 	url = https://github.com/hugefiver/2019shixun.git
 	branch = frontend
